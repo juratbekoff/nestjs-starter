@@ -1,0 +1,3 @@
+export enum ErrorCodeEnum {
+  INTERNAL_SERVER_ERROR = 'INTERNAL_SERVER_ERROR',
+}
