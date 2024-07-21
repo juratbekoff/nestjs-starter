@@ -4,6 +4,7 @@ import { ConfigModule } from '@nestjs/config';
 
 // modules
 import { AdminModule } from './modules/admin/admin.module';
+import { PrismaModule } from './modules/prisma/prisma.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { AdminModule } from './modules/admin/admin.module';
       envFilePath: '.env',
       isGlobal: true,
     }),
+    PrismaModule.forRoot(),
     AdminModule,
   ],
 })
